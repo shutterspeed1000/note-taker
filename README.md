@@ -25,27 +25,27 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Table of Contents (Optional)
 
 - [Features](#features)
-- [Link to video](#Link-to-video)
-- [Credits](#credits)
+- [Link to live site](#Link-to-live-site)
 - [License](#license)
 
 
 ## Features
 
+This frontend site was moved to express.js and apis were created to handle the requests it was making.  Requests were testing in Postman to verify they worked.
 
+Site can add, read and delete notes.
 
 Technology used based on class materal:
 * node.js
 * callbacks
+* modularization
+* middleware
+* express.js
+* api calls (get, post, delete)
+* arrays (splice and push)
 
 
-## Link to video
-
-
-
-## Credits
-
-
+## Link to live site
 
 ## License
 

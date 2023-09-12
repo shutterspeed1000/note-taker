@@ -7,11 +7,14 @@ const app = express();
 // add public folder to server webfiles
 app.use(express.static("public"));
 
+// sending API calls to seperate module
 const api = require("./routes/apiroutes");
-const html = require("./routes/htmlroutes");
+
+
+// Defaulting all /api to api 
 app.use("/api", api);
 
-//routes
+//routes for public html files
 app.get("/", (req, res) => res.sendFile(__dirname + "/public/index.html"));
 app.get("/notes", (req, res) => res.sendFile(__dirname + "/public/notes.html"));
 
