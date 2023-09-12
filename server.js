@@ -8,6 +8,7 @@ const app = express();
 app.use(express.static("public"));
 
 const api = require("./routes/apiroutes");
+const html = require("./routes/htmlroutes");
 app.use("/api", api);
 
 //routes

@@ -2,6 +2,7 @@ const express = require("express");
 const fs = require(`fs`);
 const app = express();
 
+// Middleware for json parsing
 app.use(express.json());
 
 const notes = require("../db/db.json");
@@ -16,6 +17,7 @@ app.post("/notes", (req, res) => {
 
   //set note id based on number of items in array
   newNote.id = notes.length + 1;
+
   notes.push(newNote);
 
   fs.writeFile("./db/db.json", JSON.stringify(notes), function (err) {
@@ -29,6 +31,8 @@ app.post("/notes", (req, res) => {
   res.json(notes);
 });
 
+// delete note using ID and splice in array memory, the write to file
+
 app.delete("/notes/:id", (req, res) => { 
 
    notes.splice(req.params.id - 1, 1);
@@ -40,11 +44,9 @@ app.delete("/notes/:id", (req, res) => {
         console.log("File written successfully");
       }
     });
-
+  // load new notes/all notes after DB update
    res.json(notes);
 
 })
-
-
 
 module.exports = app;
