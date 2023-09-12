@@ -35,7 +35,9 @@ app.post("/notes", (req, res) => {
 
 app.delete("/notes/:id", (req, res) => { 
 
-   notes.splice(req.params.id - 1, 1);
+let index = notes.findIndex(inx => inx.id == req.params.id)
+
+   notes.splice(index, 1);
 
    fs.writeFile("./db/db.json", JSON.stringify(notes), function (err) {
       if (err) {
