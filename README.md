@@ -52,7 +52,7 @@ https://note-taker-spw-9d88073bd277.herokuapp.com/
 
 ## Screenshots
 
-
+![Screenshot of site](https://note-taker-spw-9d88073bd277.herokuapp.com/images/Note-taker-notes.png)
 
 ## License
 
