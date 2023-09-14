@@ -26,6 +26,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 - [Features](#features)
 - [Link to live site](#Link-to-live-site)
+- [Screenshots](#screenshots)
 - [License](#license)
 
 
@@ -48,6 +49,10 @@ Technology used based on class materal:
 ## Link to live site
 
 https://note-taker-spw-9d88073bd277.herokuapp.com/
+
+## Screenshots
+
+
 
 ## License
 
